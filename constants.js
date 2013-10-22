@@ -29,6 +29,7 @@ var Constants = {
   FUNDING_END_DATE: new Date("November 20, 2013"),
   PRODUCT_NAME: "The Prish Fund",
   PRODUCT_SHORT_DESCRIPTION: "Just because.",
+  ABOUT_DESC: "[About Page Filler Txt]",
   TWITTER_USERNAME: "nodejs",
   TWITTER_TWEET: "I supported the Prish Fund. And you can to!.",
   COINBASE_PREORDER_DATA_CODE: "c28a2b9238630eacf3c3e3688ce487af",

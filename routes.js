@@ -57,7 +57,7 @@ var aboutfn = function(request, response) {
         product_name: Constants.PRODUCT_NAME,
         twitter_username: Constants.TWITTER_USERNAME,
         twitter_tweet: Constants.TWITTER_TWEET,
-        product_short_description: Constants.PRODUCT_SHORT_DESCRIPTION,
+        product_short_description: Constants.ABOUT_DESC,
         coinbase_preorder_data_code: Constants.COINBASE_PREORDER_DATA_CODE
     });
 };

@@ -21,7 +21,8 @@
     - http://webdesign.about.com/od/localization/l/blhtmlcodes-cur.htm#codes
 */
 var Constants = {
-  APP_NAME: "CrowdFunder", 
+  APP_NAME: "Prish", 
+  APP_TITLE: "The PrishFunder",
   FUNDING_TARGET: 10.00,
   FUNDING_UNIT_SYMBOL: "mBTC",
   FUNDING_SI_SCALE: 1000,

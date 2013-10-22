@@ -2,12 +2,17 @@
      Resource interpreted as Font but transferred with MIME type font/woff: 
      "https://themes.googleusercontent.com/static/fonts/ubuntu/v4/0ihfXUL2emPh0ROJezvraLO3LdcAZYWl9Si6vvxL-qU.woff".
 */
+
+/* Commenting out to see if it will fix the font issue
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
   src: local('Open Sans Light'), local('OpenSans-Light'), url(../fonts/opensans-300.woff) format('woff');
 }
+
+*/
+
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;

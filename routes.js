@@ -50,6 +50,20 @@ var indexfn = function(request, response) {
     });
 };
 
+var aboutfn = function(request, response) {
+    response.render("about", {
+        name: Constants.APP_NAME,
+        title: "" + Constants.APP_TITLE,
+        product_name: Constants.PRODUCT_NAME,
+        twitter_username: Constants.TWITTER_USERNAME,
+        twitter_tweet: Constants.TWITTER_TWEET,
+        product_short_description: Constants.PRODUCT_SHORT_DESCRIPTION,
+        coinbase_preorder_data_code: Constants.COINBASE_PREORDER_DATA_CODE
+    });
+};
+
+
+
 var orderfn = function(request, response) {
     var successcb = function(orders_json) {
 	response.render("orderpage", {orders: orders_json});

@@ -26,11 +26,19 @@ var Constants = {
   FUNDING_UNIT_SYMBOL: "mBTC",
   FUNDING_SI_SCALE: 1000,
   FUNDING_END_DATE: new Date("November 20, 2013"),
+<<<<<<< HEAD
   PRODUCT_NAME: "The Prish Fund",
   PRODUCT_SHORT_DESCRIPTION: "Just because.",
   TWITTER_USERNAME: "nodejs",
   TWITTER_TWEET: "I supported the Prish Fund. And you can to!.",
   COINBASE_PREORDER_DATA_CODE: "c28a2b9238630eacf3c3e3688ce487af",
+=======
+  PRODUCT_NAME: "Product: Development Version",
+  PRODUCT_SHORT_DESCRIPTION: "One sentence description.",
+  TWITTER_USERNAME: "prishantha",
+  TWITTER_TWEET: "I supported the Prish Fund!",
+  COINBASE_PREORDER_DATA_CODE: "4db48d64480f1352a98cda1f48c4f90a",
+>>>>>>> ba64defab44d76886d0560fde793c2bfae53b3ca
   days_left: function() {
       return Math.max(Math.ceil((this.FUNDING_END_DATE - new Date()) / (1000*60*60*24)), 0);
   }

@@ -51,6 +51,20 @@ var indexfn = function(request, response) {
     });
 };
 
+var crowdfunderfn = function(request, response) {
+    response.render("crowdfunder", {
+        name: Constants.APP_NAME,
+        title: "" + Constants.APP_TITLE,
+        tabs: Constants.TABS,
+        product_name: Constants.PRODUCT_NAME,
+        twitter_username: Constants.TWITTER_USERNAME,
+        twitter_tweet: Constants.TWITTER_TWEET,
+        product_short_description: Constants.PRODUCT_SHORT_DESCRIPTION,
+        coinbase_preorder_data_code: Constants.COINBASE_PREORDER_DATA_CODE
+    });
+};
+
+
 var aboutfn = function(request, response) {
     response.render("about", {
         name: Constants.APP_NAME,
@@ -137,6 +151,7 @@ var define_routes = function(dict) {
 
 var ROUTES = define_routes({
     '/': indexfn,
+    '/crowdfunder': crowdfunderfn,
     '/orders': orderfn,
     '/about' : aboutfn,
     '/contact' : contactfn,

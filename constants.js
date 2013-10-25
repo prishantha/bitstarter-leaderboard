@@ -27,7 +27,8 @@ var Constants = {
   FUNDING_UNIT_SYMBOL: "mBTC",
   FUNDING_SI_SCALE: 1000,
   FUNDING_END_DATE: new Date("November 20, 2013"),
-  TABS: '<li class="active"></li>',
+  TABS: '<li class="active">
+            </li>',
 // <a href=\"/#\">Home</a></li><li><a href=\"/about\">About</a></li><li><a href=\"/orders\">Orders</a></li><li><a href=\"/contact\">Contact</a></li>",
   PRODUCT_NAME: "The Prish Fund",
   PRODUCT_SHORT_DESCRIPTION: "Just because.",

@@ -24,6 +24,7 @@ function OrdersCtrl($http, $scope) {
       $scope.unit_symbol = data.unit_symbol;
       $scope.target = data.target;
       $scope.days_left = data.days_left ? data.days_left : 0;
+      $scope.days_elapsed = data.days_elapsed ? data.days_elapsed : 0;
       $scope.percentage_funded = Math.min($scope.total_funded / $scope.target * 100.0, 100);
     }
   }).error(function(data, status, headers, config) {

@@ -27,10 +27,10 @@ var Constants = {
   FUNDING_UNIT_SYMBOL: "mBTC",
   FUNDING_SI_SCALE: 1000,
   FUNDING_END_DATE: new Date("November 20, 2013"),
-  TABS: '<li class="homeclass"><a href="/">Home</a></li>'
-+ '<li class="aboutclass"><a href="/about">About</a></li>'
-+ '<li><a href="/crowdfunder">Crowdfunder</a></li>'
-+ '<li><a href="/contact">Contact</a></li>',
+  TABS: '<li class="fakehomeclass"><a href="/">Home</a></li>'
++ '<li class="fakeaboutclass"><a href="/about">About</a></li>'
++ '<li class="fakecrowdfunderclass"><a href="/crowdfunder">Crowdfunder</a></li>'
++ '<li class="fakecontactclass"><a href="/contact">Contact</a></li>',
   PRODUCT_NAME: "The Prish Fund",
   PRODUCT_SHORT_DESCRIPTION: "Just because.",
   ABOUT_DESC: "[About Page Filler Txt]",

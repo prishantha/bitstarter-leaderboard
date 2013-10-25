@@ -42,7 +42,7 @@ var indexfn = function(request, response) {
     response.render("homepage", {
 	name: Constants.APP_NAME,
 	title: "" + Constants.APP_TITLE,
-	tabs: Constants.TABS.replace("homeclass","active"),
+	tabs: Constants.TABS.replace("fakehomeclass","active"),
 	product_name: Constants.PRODUCT_NAME,
 	twitter_username: Constants.TWITTER_USERNAME,
 	twitter_tweet: Constants.TWITTER_TWEET,
@@ -51,11 +51,25 @@ var indexfn = function(request, response) {
     });
 };
 
+var aboutfn = function(request, response) {
+    response.render("about", {
+        name: Constants.APP_NAME,
+        title: "" + Constants.APP_TITLE,
+        tabs: Constants.TABS.replace("fakeaboutclass","active"),
+        product_name: Constants.PRODUCT_NAME,
+        twitter_username: Constants.TWITTER_USERNAME,
+        twitter_tweet: Constants.TWITTER_TWEET,
+        product_short_description: Constants.ABOUT_DESC,
+        coinbase_preorder_data_code: Constants.COINBASE_PREORDER_DATA_CODE
+    });
+};
+
+
 var crowdfunderfn = function(request, response) {
     response.render("crowdfunder", {
         name: Constants.APP_NAME,
         title: "" + Constants.APP_TITLE,
-        tabs: Constants.TABS,
+        tabs: Constants.TABS.replace("fakecrowdfunderclass","active").replace('Crowdfunder</a></li>','Crowdfunder</a></li><li><a href="/orders">Orders</a></li>',
         product_name: Constants.PRODUCT_NAME,
         twitter_username: Constants.TWITTER_USERNAME,
         twitter_tweet: Constants.TWITTER_TWEET,
@@ -65,22 +79,11 @@ var crowdfunderfn = function(request, response) {
 };
 
 
-var aboutfn = function(request, response) {
-    response.render("about", {
-        name: Constants.APP_NAME,
-        title: "" + Constants.APP_TITLE,
-        product_name: Constants.PRODUCT_NAME,
-        twitter_username: Constants.TWITTER_USERNAME,
-        twitter_tweet: Constants.TWITTER_TWEET,
-        product_short_description: Constants.ABOUT_DESC,
-        coinbase_preorder_data_code: Constants.COINBASE_PREORDER_DATA_CODE
-    });
-};
-
 var contactfn = function(request, response) {
     response.render("contact", {
         name: Constants.APP_NAME,
         title: "" + Constants.APP_TITLE,
+        tabs: Constants.TABS.replace("fakecontactclass","active"),
         product_name: Constants.PRODUCT_NAME,
         twitter_username: Constants.TWITTER_USERNAME,
         twitter_tweet: Constants.TWITTER_TWEET,

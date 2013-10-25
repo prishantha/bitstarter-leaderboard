@@ -69,7 +69,7 @@ var crowdfunderfn = function(request, response) {
     response.render("crowdfunder", {
         name: Constants.APP_NAME,
         title: "" + Constants.APP_TITLE,
-        tabs: Constants.TABS.replace("fakecrowdfunderclass","active").replace('Crowdfunder</a></li>','Crowdfunder</a></li><li><a href="/orders">Orders</a></li>',
+        tabs: Constants.TABS.replace("fakecrowdfunderclass","active").replace('Crowdfunder</a></li>','Crowdfunder</a></li><li><a href="/orders">Orders</a></li>'),
         product_name: Constants.PRODUCT_NAME,
         twitter_username: Constants.TWITTER_USERNAME,
         twitter_tweet: Constants.TWITTER_TWEET,

@@ -1,4 +1,0 @@
-<head>
-
-<p>Hello</p>
-</head>

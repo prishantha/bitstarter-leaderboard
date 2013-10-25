@@ -107,7 +107,8 @@ var api_orderfn = function(request, response) {
 	var data = uu.extend(totals,
 			     {target: Constants.FUNDING_TARGET,
 			      unit_symbol: Constants.FUNDING_UNIT_SYMBOL,
-			      days_left: Constants.days_left()});
+			      days_left: Constants.days_left(),
+			      days_elapsed: Constants.days_elapsed()});
 	data.total_funded *= Constants.FUNDING_SI_SCALE;
 	response.json(data);
     };

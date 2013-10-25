@@ -39,7 +39,11 @@ var Constants = {
   COINBASE_PREORDER_DATA_CODE: "c28a2b9238630eacf3c3e3688ce487af",
   days_left: function() {
       return Math.max(Math.ceil((this.FUNDING_END_DATE - new Date()) / (1000*60*60*24)), 0);
-  }
+  },
+  SADNESS_START_DATE: new Date("January 1, 2013"),
+  days_elapsed: function() {
+      return Math.ceil((new Date() - this.SADNESS_START_DATE) / (1000*60*60*24));
+  },
 };
 
 module.exports = Constants;

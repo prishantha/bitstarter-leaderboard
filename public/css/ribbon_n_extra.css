@@ -1,0 +1,174 @@
+/* Large desktop */
+@media (min-width: 980px) { 
+  body {
+   padding-top: 80px;
+  }
+ .linediv-l {
+   border-right: 1px white solid;
+  }
+ .linediv-r {
+   border-left: 1px white solid;
+ }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+ .copy {
+   padding: 2.5% 10%;
+ }
+ .linediv-l {
+   border-bottom: 1px white solid;
+ }
+ .linediv-r {
+   border-top: 1px white solid;
+ }
+}
+
+/* All form factors */
+
+/* Main body and headings */
+body{
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.subheading {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  text-align: center; 
+}
+ .heading {
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+}
+p.lead {
+  padding-top: 1.5%;
+  font-size: 36px;
+  line-height: 30px;
+}
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Video pitch and Action */
+.pitch {
+  padding: 2.5% 0%;
+}
+.order {
+  padding: 2% 0%;
+}
+.actions {
+  background-color: #343434;
+  padding: 3% 0%;
+}
+.video, .thermometer, .order, .social, .statistics {
+  text-align: center;
+}
+.statistics h3, .statistics p {
+  color: white;
+}
+
+/* Marketing Copy and Footer */
+.copy {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  text-align: justify;
+}
+.asset {
+  padding: 2.5% 0%;
+}
+
+.github-fork-ribbon {
+    position: fixed;
+
+	/* Add a bit of padding to give some substance outside the "stitching" */
+	padding: 2px 0;
+
+	/* Set the base colour */
+	background-color: #51b2db;
+
+	/* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.00)), to(rgba(0, 0, 0, 0.15)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.00), rgba(0, 0, 0, 0.15));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#000000', EndColorStr='#000000');
+
+	/* Add a drop shadow */
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+
+	z-index: 9999;
+}
+
+@media (max-width: 979px) {
+	.github-fork-ribbon {
+		position: absolute;
+		display: none;
+	}	
+}
+
+.github-fork-ribbon a,
+.github-fork-ribbon a:hover {
+	/* Set the font */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	color: white;
+
+	/* Set the text properties */
+	text-decoration: none;
+	text-shadow: 0 -1px rgba(0,0,0,0.5);
+	text-align: center;
+
+	width: 300px;
+	line-height: 20px;
+
+	/* Set the layout properties */
+	display: inline-block;
+	padding: 4px 0;
+
+	/* Add "stitching" effect */
+	border-width: 1px 0;
+	border-style: dotted;
+	border-color: rgba(255,255,255,0.7);
+}
+
+.github-fork-ribbon a span.smalltext {
+    font-size: 12px;
+}
+
+.github-fork-ribbon-wrapper {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	z-index: 9999;
+}
+
+.github-fork-ribbon-wrapper.right {
+	right: 0;
+}
+
+.github-fork-ribbon-wrapper.right .github-fork-ribbon {
+    top: 52px;
+    right: -73px;
+
+    /* Rotate the banner 45 degrees */
+    -webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.footer {
+  color: #cccccc;
+  text-align: center;
+}
+.footer p {
+  font-size: 11px;
+}
+.footer a {
+  color: #ccccff;
+}

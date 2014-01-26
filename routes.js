@@ -107,6 +107,23 @@ var testfn = function(request, response) {
 };
 
 
+var basefn = function(request, response) {
+    response.render("base", {
+        name: Constants.APP_NAME,
+        title: "" + Constants.APP_TITLE,
+        tabs: Constants.TABS.replace("fakecontactclass","active"),
+        product_name: Constants.PRODUCT_NAME,
+        twitter_username: Constants.TWITTER_USERNAME,
+        twitter_tweet: Constants.TWITTER_TWEET,
+        product_short_description: "Page Not Setup",
+        coinbase_preorder_data_code: Constants.COINBASE_PREORDER_DATA_CODE
+    });
+};
+
+
+
+
+
 
 
 var orderfn = function(request, response) {
@@ -176,7 +193,9 @@ var ROUTES = define_routes({
     '/contact' : contactfn,
     '/api/orders': api_orderfn,
     '/refresh_orders': refresh_orderfn,
-    '/test': testfn
+    '/test': testfn,
+    '/base': basefn
+
 });
 
 module.exports = ROUTES;

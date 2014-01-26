@@ -68,7 +68,7 @@
 
 
 
-
+/* P3 needed in order to expand */
 /* =============================================================
  * bootstrap-collapse.js v2.3.2
  * http://twitter.github.com/bootstrap/javascript.html#collapse
@@ -88,15 +88,15 @@
  * limitations under the License.
  * ============================================================ */
 
-/*
+
 !function ($) {
 
   "use strict"; // jshint ;_;
-*/
+
 
  /* COLLAPSE PUBLIC CLASS DEFINITION
   * ================================ */
-/*
+
   var Collapse = function (element, options) {
     this.$element = $(element)
     this.options = $.extend({}, $.fn.collapse.defaults, options)
@@ -189,11 +189,11 @@
     }
 
   }
-*/
+
 
  /* COLLAPSE PLUGIN DEFINITION
   * ========================== */
-/*
+
   var old = $.fn.collapse
 
   $.fn.collapse = function (option) {
@@ -211,20 +211,20 @@
   }
 
   $.fn.collapse.Constructor = Collapse
-*/
+
 
  /* COLLAPSE NO CONFLICT
   * ==================== */
-/*
+
   $.fn.collapse.noConflict = function () {
     $.fn.collapse = old
     return this
   }
 
-*/
+
  /* COLLAPSE DATA-API
   * ================= */
-/*
+
   $(document).on('click.collapse.data-api', '[data-toggle=collapse]', function (e) {
     var $this = $(this), href
       , target = $this.attr('data-target')
@@ -236,41 +236,6 @@
   })
 
 }(window.jQuery);
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -296,15 +261,15 @@
  * limitations under the License.
  * ============================================================ */
 
-
+/*
 !function ($) {
 
   "use strict"; // jshint ;_;
-
+*/
 
  /* DROPDOWN CLASS DEFINITION
   * ========================= */
-
+/*
   var toggle = '[data-toggle=dropdown]'
     , Dropdown = function (element) {
         var $el = $(element).on('click.dropdown.data-api', this.toggle)
@@ -408,11 +373,11 @@
 
     return $parent
   }
-
+*/
 
   /* DROPDOWN PLUGIN DEFINITION
    * ========================== */
-
+/*
   var old = $.fn.dropdown
 
   $.fn.dropdown = function (option) {
@@ -425,20 +390,20 @@
   }
 
   $.fn.dropdown.Constructor = Dropdown
-
+*/
 
  /* DROPDOWN NO CONFLICT
   * ==================== */
-
+/*
   $.fn.dropdown.noConflict = function () {
     $.fn.dropdown = old
     return this
   }
-
+*/
 
   /* APPLY TO STANDARD DROPDOWN ELEMENTS
    * =================================== */
-
+/*
   $(document)
     .on('click.dropdown.data-api', clearMenus)
     .on('click.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
@@ -446,7 +411,7 @@
     .on('keydown.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
 
 }(window.jQuery);
-
+*/
 
 
 

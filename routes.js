@@ -175,7 +175,7 @@ var ROUTES = define_routes({
     '/about' : aboutfn,
     '/contact' : contactfn,
     '/api/orders': api_orderfn,
-    '/refresh_orders': refresh_orderfn
+    '/refresh_orders': refresh_orderfn,
     '/test': testfn
 });
 
